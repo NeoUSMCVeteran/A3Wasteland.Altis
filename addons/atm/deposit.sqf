@@ -3,6 +3,8 @@
 	_playerMoney = player getVariable ["cmoney", 0];
 	_bankMoney = player getVariable ["bmoney", 0];
 	_atmMoney = parseNumber(ctrlText 2702);
+	
+if _atmMoney > 0 {
 
 if((player getVariable "cmoney" < _atmMoney) OR (player getVariable "cmoney" < 0)) exitwith {hint format["You don't have $%1 to deposit", _atmMoney];};
     _bankMoney = _bankMoney + _atmMoney;
@@ -13,3 +15,5 @@ if((player getVariable "cmoney" < _atmMoney) OR (player getVariable "cmoney" < 0
 	hint format["You deposited $%1", _atmMoney];
 	call fn_savePlayerData;
 	closeDialog 0;
+	
+};
