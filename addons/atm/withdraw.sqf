@@ -3,6 +3,7 @@
 	_playerMoney = player getVariable ["cmoney", 0];
 	_bankMoney = player getVariable ["bmoney", 0];
 	_atmMoney = parseNumber(ctrlText 2702);
+	
 if _atmMoney > 0 {
 
 if((player getVariable "bmoney" < _atmMoney) OR (player getVariable "bmoney" < 0)) exitwith {hint format["You don't have $%1 to withdraw", _atmMoney];};
