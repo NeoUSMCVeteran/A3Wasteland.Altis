@@ -126,6 +126,7 @@ while {true} do
 	} else {
 		format ["%1 <img size='0.7' image='client\icons\running_man.paa'/>", 100 - ceil((getFatigue player) * 100)];
 	};
+	_str = format["%1<br/>%2 <img size='0.7' image='client\icons\bank.paa'/>", _str, player getVariable "bmoney"];
 	_str = format["%1<br/>%2 <img size='0.7' image='client\icons\money.paa'/>", _str, player getVariable "cmoney"];
 	_str = format["%1<br/>%2 <img size='0.7' image='client\icons\water.paa'/>", _str, ceil (thirstLevel max 0)];
 	_str = format["%1<br/>%2 <img size='0.7' image='client\icons\food.paa'/>", _str, ceil (hungerLevel max 0)];
@@ -140,7 +141,7 @@ while {true} do
 
 	if (isStreamFriendlyUIEnabled) then
 	{
-		_tempString = format ["<t color='#A0FFFFFF'>A3Wasteland %1<br/>www.a3wasteland.com</t>", getText (configFile >> "CfgWorlds" >> worldName >> "description")];
+		_tempString = format ["<t color='#A0FFFFFF'>TOP A3Wasteland %1<br/>www.toparma.com</t>", getText (configFile >> "CfgWorlds" >> worldName >> "description")];
 		_yOffset = 0.28;
 
 		_hudVehicle ctrlSetStructuredText parseText _tempString;

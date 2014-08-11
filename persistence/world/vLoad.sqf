@@ -22,7 +22,7 @@ _strToSide =
 _maxLifetime = ["A3W_objectLifetime", 0] call getPublicVar;
 _exists = _filename2 call iniDB_exists;
 _objectsCount = 0;
-
+sleep 60;
 if (!isNil "_exists" && {_exists}) then
 {
 	_objectsCount = [_filename2, "Info", "ObjCount", "NUMBER"] call iniDB_read;

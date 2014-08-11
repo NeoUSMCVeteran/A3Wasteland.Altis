@@ -27,7 +27,8 @@ fn_loadAccount = "persistence\players\s_loadAccount.sqf" call mf_compile;
 
 	if (!isNull _player && !alive _player) then
 	{
-		(_UID call PDB_databaseNameCompiler) call iniDB_delete;
+		// (_UID call PDB_databaseNameCompiler) call iniDB_delete;
+		[(getPlayerUID _player) call PDB_databaseNameCompiler, "PlayerSave"]  call iniDB_deleteSection;
 	};
 };
 
@@ -51,5 +52,5 @@ fn_loadAccount = "persistence\players\s_loadAccount.sqf" call mf_compile;
 "deletePlayerData" addPublicVariableEventHandler
 {
 	_player = _this select 1;
-	((getPlayerUID _player) call PDB_databaseNameCompiler) call iniDB_delete;
+	[(getPlayerUID _player) call PDB_databaseNameCompiler, "PlayerSave"]  call iniDB_deleteSection;
 };

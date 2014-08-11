@@ -14,5 +14,5 @@ _isStaticWeapon = { _this isKindOf "StaticWeapon" };
 _isWarchest = { _this getVariable ["a3w_warchest", false] && {(_this getVariable ["side", sideUnknown]) in [WEST,EAST]} };
 _isBeacon = { _this getVariable ["a3w_spawnBeacon", false] };
 
-_fileName = "Objects" call PDB_databaseNameCompiler;
-_fileName2 = "v" call PDB_databaseNameCompiler;
+_fileName = format ["Objects_%1", A3W_serverNumber] call PDB_databaseNameCompiler;
+_fileName2 = format ["Vehicles_%1", A3W_serverNumber] call PDB_databaseNameCompiler;

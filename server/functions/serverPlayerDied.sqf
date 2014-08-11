@@ -8,12 +8,14 @@ if (!isServer) exitWith {};
 private ["_unit", "_killer", "_presumedKiller", "_backpack"];
 
 _unit = _this select 0;
-//_unit setVariable ["processedDeath", diag_tickTime];
+_unit setVariable ["processedDeath", diag_tickTime];
 
 // Remove player save on death
 if (isPlayer _unit && {["A3W_playerSaving"] call isConfigOn}) then
 {
-	((getPlayerUID _unit) call PDB_databaseNameCompiler) call iniDB_delete;
+
+	[(getPlayerUID _unit) call PDB_databaseNameCompiler, "PlayerSave"]  call iniDB_deleteSection;
+	// ((getPlayerUID _unit) call PDB_databaseNameCompiler) call iniDB_delete;
 	_unit removeEventHandler ["Local", _unit getVariable ["corpseLocalEH", -1]]; // remove corpse deletion on leave since it was a legit kill
 };
 

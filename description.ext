@@ -61,3 +61,24 @@ class RscTitles
  	#include "client\systems\hud\dialog\hud.hpp"
 	#include "client\systems\playerMenu\dialog\welcome.hpp"
 };
+class CfgSounds
+{
+    sounds[] =
+	{
+	carlock, caralarm
+	};
+
+class carlock
+{
+name = "carlock";
+sound[] = {sounds\carlock.ogg,0.2,1};
+titles[] = {};
+};
+
+class caralarm
+{
+name = "caralarm";
+sound[] = {sounds\caralarm.ogg,0.9,1};
+titles[] = {};
+};
+};

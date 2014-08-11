@@ -64,6 +64,7 @@ publicVariable "A3W_combatAbortDelay";
 publicVariable "A3W_unlimitedStamina";
 publicVariable "A3W_bleedingTime";
 publicVariable "A3W_teamPlayersMap";
+publicVariable "A3W_serverNumber";
 
 _playerSavingOn = ["A3W_playerSaving"] call isConfigOn;
 _baseSavingOn = ["A3W_baseSaving"] call isConfigOn;

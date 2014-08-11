@@ -34,7 +34,7 @@ _getValue =
 if (["A3W_moneySaving"] call isConfigOn) then
 {
 	["Money", "NUMBER"] call _getValue;
-	["BankMoney", "NUMBER"] call _getValue;
+	["BankMoney", "NUMBER", "PlayerInfo"] call _getValue;
 };
 
 ["LoadedMagazines", "ARRAY"] call _getValue;

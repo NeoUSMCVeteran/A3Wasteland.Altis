@@ -12,6 +12,14 @@ player createDiaryRecord ["changelog",
 [
 "0.9ghj",
 "
+<br/> 08/09/2014 - 1pm
+<br/> [Added] Vehicle Lock once Vehicle Saved.
+<br/> 
+<br/> 08/08/2014 - 10pm
+<br/> [Fixed] Bank Money (ATM) deletes on death.
+<br/> [Added] ALL helicopters come with flares. 
+<br/> [Changed] - Helicopter price increase.
+<br/> 
 <br/> 07/28/2014 - 11am
 <br/> [Changed] - Altis Airport Conquest Territories - $15,000 Payout
 <br/> [Changed] - Able to tow or lift any vehicle with all vehicles. 

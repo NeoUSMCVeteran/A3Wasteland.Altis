@@ -8,7 +8,9 @@
 	[format ["<img image='client\icons\playerMenu.paa' color='%1'/> <t color='%1'>[</t>Player Menu<t color='%1'>]</t>", "#FF8000"], "client\systems\playerMenu\init.sqf", [], -10, false], //, false, "", ""],
 
 	["<img image='client\icons\money.paa'/> Pickup Money", "client\actions\pickupMoney.sqf", [], 1, false, false, "", "{_x getVariable ['owner', ''] != 'mission'} count (player nearEntities ['Land_Money_F', 5]) > 0"],
-
+		
+	["<img image='client\icons\r3f_unlock.paa'/>Unlock Vehicle", "client\actions\unlock.sqf", [], 1, false, false, "", "count nearestObjects [player, ['LandVehicle', 'Ship', 'Air'], 5] > 0"],
+	["<img image='client\icons\r3f_lock.paa'/>Lock Vehicle", "client\actions\lock.sqf", [], 1, false, false, "", "count nearestObjects [player, ['LandVehicle', 'Ship', 'Air'], 5] > 0"],
 	["<img image='\a3\Ui_f\data\GUI\Cfg\CommunicationMenu\transport_ca.paa'/> <t color='#FFFFFF'>Cancel Action</t>", "noscript.sqf", "doCancelAction = true", 1, false, false, "", "mutexScriptInProgress"],
 
 	["[0]"] call getPushPlaneAction,

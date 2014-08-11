@@ -30,8 +30,6 @@ _isSaveable =
 	} forEach _x;
 } forEach [civilianVehicles, call allVehStoreVehicles]; //objectList
 
-_filename2 = "v" call PDB_databaseNameCompiler;
-
 if !(_filename2 call iniDB_exists) then
 {
 	[_filename2, "Info", "ObjCount", 0] call iniDB_write;
@@ -50,13 +48,15 @@ while {true} do
 		if (alive _obj) then
 		{
 			_class = typeOf _obj;
-			_ownerId = _x getVariable "ownerUID"; 
-			if(!isNil "_ownerId" && {(_baseSavingOn && {_class call _isSaveable}) || {_boxSavingOn && {_obj isKindOf "AllVehicles"}}}) //|| 
+			_ownerId = _x getVariable "ownerUID";
+			if(!isNil "_ownerId" && {(_baseSavingOn && {_class call _isSaveable}) || {_boxSavingOn && {_obj isKindOf "AllVehicles"}}})
 
 			   then
 			{
 				_netId = netId _obj;
 				_pos = getPosATL _obj;
+				_value = (_pos select 2) + 0.3;
+				_pos set [2, _value];
 				_dir = [vectorDir _obj, vectorUp _obj];
 				_damage = damage _obj;
 				_allowDamage = if (_obj getVariable ["allowDamage", false]) then { 1 } else { 0 };
@@ -77,14 +77,19 @@ while {true} do
 					[_variables, ["ownerUID", _owner]] call BIS_fnc_arrayPush;
 				};
 				
-			
+				_ownerN = _obj getVariable ["ownerN", ""];
 				
+				if (_ownerN != "") then
+				{
+					[_variables, ["ownerN", _ownerN]] call BIS_fnc_arrayPush;
+				};
+								
 				_weapons = [];
 				_magazines = [];
 				_items = [];
 				_backpacks = [];
 				
-	
+				// Save weapons & ammo
 				_weapons = (getWeaponCargo _obj) call cargoToPairs;
 				_magazines = (getMagazineCargo _obj) call cargoToPairs;
 				_items = (getItemCargo _obj) call cargoToPairs;

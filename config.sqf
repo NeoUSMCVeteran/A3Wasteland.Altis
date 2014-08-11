@@ -16,51 +16,17 @@ cityList = compileFinal str
 	["Town_4", 250, "Athira"],
 	["Town_5", 200, "Telos"],
 	["Town_6", 200, "Sofia"],
-	//["Town_7", 200, "Paros"],
 	["Town_8", 300, "Pyrgos"],
 	["Town_9", 150, "Selakano"],
 	["Town_10", 200, "Vikos"],
-	//["Town_11", 250, "Zaros"],
-	["Town_12", 250, "Neochori"],
 	["Town_13", 250, "Aggelochori"],
-	//["Town_14", 200, "Panochori"],
+	["Town_14", 200, "Panochori"],
 	["Town_15", 200, "Charkia"],
-	//["Town_16", 150, "Chalkeia"],
 	["Town_17", 150, "Oreokastro"],
-	//["Town_18", 100, "Dump"],
-	//["Town_19", 125, "Negades"],
-	//["Town_20", 100, "Frini"],
-	//["Town_21", 175, "Poliakko"],
-	//["Town_22", 125, "Kore"],
-	//["Town_23", 125, "Syrta"],
-	["Town_24", 150, "Lakka"]
-	//["Town_25", 125, "Dorida"],
-	//["Town_26", 125, "Panagia"],
-	//["Town_27", 150, "Kalochori"],
-	//["Town_28", 175, "Feres"],
-	//["Town_29", 175, "Molos"],
-	//["Town_30", 175, "Rodopoli"]
+	["Town_19", 125, "Negades"]
+
 ];
 
-/*
-militarylist = compileFinal str
-[
-	["milSpawn_1"],
-	["milSpawn_2"],
-	["milSpawn_3"],
-	["milSpawn_4"],
-	["milSpawn_5"],
-	["milSpawn_6"],
-	["milSpawn_7"],
-	["milSpawn_8"],
-	["milSpawn_9"],
-	["milSpawn_10"],
-	["milSpawn_11"],
-	["milSpawn_12"],
-	["milSpawn_13"],
-	["milSpawn_14"]
-];
-*/
 
 config_items_jerrycans_max = compileFinal "1";
 config_items_syphon_hose_max = compileFinal "1";
@@ -82,26 +48,16 @@ config_refuel_amounts = compileFinal str
 // 4 - Territory category, currently unused. See territory/README.md for details.
 config_territory_markers = compileFinal str
 [
-	//["TERRITORY_THRONOS_CASTLE", "Thronos Castle", 1000, "CASTLE"],
-	//["TERRITORY_KASTRO_CASTLE", "Kastro Castle", 1000, "CASTLE"],
-	//["TERRITORY_SW_AIRFIELD", "AAC Airfield", 1000, "AIRFIELD"],
-	["TERRITORY_MAIN_AIRBASE_SW", "Altis Airport (A)", 15000, "AIRBASE"],
-	["TERRITORY_MAIN_AIRBASE_CENTER", "Altis Airport (B)", 15000, "AIRBASE"],
-	["TERRITORY_MAIN_AIRBASE_NE", "Altis Airport (C)", 15000, "AIRBASE"],
-	//["TERRITORY_NE_AIRFIELD", "Molos Airfield", 1000, "AIRFIELD"],
-	//["TERRITORY_SE_AIRFIELD", "Selakano Airfield", 1000, "AIRFIELD"],
-	//["TERRITORY_NW_AIRFIELD", "Northwest Airfield", 1000, "AIRFIELD"],
-	["TERRITORY_SALTFLATS_AIRFIELD", "Saltflats", 1000, "AIRFIELD"]
-	//["TERRITORY_WEST_POWER_PLANT", "West Power Plant", 1000, "POWER"],
-	//["TERRITORY_CENTER_POWER_PLANT", "Center Power Plant", 1000, "POWER"],
-	//["TERRITORY_EAST_POWER_PLANT", "East Power Plant", 1000, "POWER"],
-	//["TERRITORY_IRAKLIA_RUINS", "Iraklia Ruins", 1000, "RUINS"],
-	//["TERRITORY_ARTINARKI_RUINS", "Artinarki Ruins", 1000, "RUINS"],
-	//["TERRITORY_MOLOS_TRANSMITTER", "Molos Transmitter", 1000, "TRANSMITTER"],
-	//["TERRITORY_DIDYMOS_TRANSMITTER_1", "Didymos Transmitter One", 1000, "TRANSMITTER"],
-	//["TERRITORY_DIDYMOS_TRANSMITTER_2", "Didymos Transmitter Two", 1000, "TRANSMITTER"],
-	//["TERRITORY_MAGOS_TRANSMITTER", "Magos Transmitter", 1000, "TRANSMITTER"],
-	//["TERRITORY_PYRSOS_TRANSMITTER", "Pyrsos Transmitter", 1000, "TRANSMITTER"],
-	//["TERRITORY_MILITARY_RESEARCH", "Telos Military Base", 1000, "MILITARY"]
+
+	["TERRITORY_0_KAVALA_A", "Kavala (A)", 15000],
+	["TERRITORY_0_KAVALA_B", "Kavala (B)", 15000],
+	["TERRITORY_0_KAVALA_C", "Kavala (C)", 15000],
+	["TERRITORY_1_ALTISAIR_A", "Altis Airport (A)", 15000],
+	["TERRITORY_1_ALTISAIR_B", "Altis Airport (B)", 15000],
+	["TERRITORY_1_ALTISAIR_C", "Altis Airport (C)", 15000],
+	["TERRITORY_2_PYRGOS_A", "Pyrgos (A)", 15000],
+	["TERRITORY_2_PYRGOS_B", "Pyrgos (B)", 15000],
+	["TERRITORY_2_PYRGOS_C", "Pyrgos (C)", 15000]
+	
 ];
 
