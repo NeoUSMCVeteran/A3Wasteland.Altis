@@ -55,6 +55,10 @@ fn_savePlayerData = "persistence\players\c_savePlayerData.sqf" call mf_compile;
 			{
 				player groupChat "Your position has been reset";
 			};
+		}
+		else
+		{
+			_data call fn_applyPlayerData;
 		};
 
 		playerData_loaded = true;
