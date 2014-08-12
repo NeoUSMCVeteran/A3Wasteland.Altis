@@ -88,7 +88,7 @@ else
 	if (_dead && alive vehicle _unit) then
 	{
 		_unit setVariable ["FAR_isUnconscious", 1, true];
-		[(getPlayerUID _UNIT) call PDB_databaseNameCompiler, "PlayerSave"]  call iniDB_deleteSection;
+		[(getPlayerUID _unit) call PDB_databaseNameCompiler, "PlayerSave"]  call iniDB_deleteSection;
 
 		_unit allowDamage false;
 		if (vehicle _unit == _unit) then { [_unit, "AinjPpneMstpSnonWrflDnon"] call switchMoveGlobal };
