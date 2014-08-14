@@ -25,10 +25,9 @@ savePlayerHandle = _this spawn
 
 		[_info, ["UID", _UID]] call BIS_fnc_arrayPush;
 		[_info, ["Name", name player]] call BIS_fnc_arrayPush;
-		[_info, ["Donator", if (player getVariable ["isDonator", false]) then { 1 } else { 0 }]] call BIS_fnc_arrayPush;
-		[_info, ["LastSide", str side player]] call BIS_fnc_arrayPush;
+		[_info, ["LastGroupSide", str side group player]] call BIS_fnc_arrayPush;
 		[_info, ["LastPlayerSide", str playerSide]] call BIS_fnc_arrayPush;
-		[_info, ["BankMoney", player getVariable ["bmoney", 0]]] call BIS_fnc_arrayPush;
+		[_info, ["BankMoney", player getVariable ["bmoney", 0]] call BIS_fnc_arrayPush; // Not implemented in vanilla mission
 
 		_data = [];
 
@@ -44,12 +43,13 @@ savePlayerHandle = _this spawn
 		[_data, ["Hunger", ["hungerLevel", 0] call getPublicVar]] call BIS_fnc_arrayPush;
 		[_data, ["Thirst", ["thirstLevel", 0] call getPublicVar]] call BIS_fnc_arrayPush;
 		[_data, ["Money", player getVariable ["cmoney", 0]]] call BIS_fnc_arrayPush; // Money is always saved, but only restored if A3W_moneySaving = 1
+
 		// Only save those when on ground or underwater (you probably wouldn't want to spawn 500m in the air if you get logged off in flight)
 		if (isTouchingGround vehicle player || {(getPos player) select 2 < 1} || {(getPosASL player) select 2 < 1}) then
 		{
 			[_data, ["Position", getPosATL player]] call BIS_fnc_arrayPush;
 			[_data, ["Direction", direction player]] call BIS_fnc_arrayPush;
-		
+
 			if (vehicle player == player) then
 			{
 				[_data, ["CurrentWeapon", format ["%1", currentMuzzle player]]] call BIS_fnc_arrayPush; // currentMuzzle returns a number sometimes, hence the format

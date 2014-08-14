@@ -26,5 +26,5 @@ _hasInventory =
 	 getNumber (_vehCfg >> "transportMaxBackpacks") > 0})
 };
 
-_fileName = format ["Objects_%1", A3W_serverNumber] call PDB_databaseNameCompiler;
-_fileName2 = format ["Vehicles_%1", A3W_serverNumber] call PDB_databaseNameCompiler;
+_fileName = "Objects" call PDB_objectFileName;
+_fileName2 = "Vehicles" call PDB_objectFileName;

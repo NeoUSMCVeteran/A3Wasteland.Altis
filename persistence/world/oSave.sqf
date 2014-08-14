@@ -24,7 +24,7 @@ _isSaveable =
 		_obj = _x;
 		if (_index > 0) then { _obj = _x select 1 };
 		
-		if (!(_obj isKindOf "ReammoBox_F" or _obj isKindOf "AllVehicles") && {!(_obj call _isSaveable)}) then
+		if (!(_obj isKindOf "ReammoBox_F") && {!(_obj call _isSaveable)}) then
 		{
 			[_saveableObjects, _obj] call BIS_fnc_arrayPush;
 		};

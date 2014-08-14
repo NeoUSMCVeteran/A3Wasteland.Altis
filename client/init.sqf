@@ -122,7 +122,7 @@ waitUntil {!isNull findDisplay 46};
 [] execVM "client\functions\initSurvival.sqf";
 [] spawn updateMissionsMarkers;
 // [] call updateRadarMarkers;
-if(isnil {player getVariable "bmoney"}) then {player setVariable["bmoney",0,true];};
+
 [] spawn
 {
 	[] execVM "client\functions\createGunStoreMarkers.sqf";
