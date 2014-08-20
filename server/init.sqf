@@ -54,6 +54,14 @@ A3W_combatAbortDelay = compileFinal str A3W_combatAbortDelay;
 A3W_unlimitedStamina = compileFinal str A3W_unlimitedStamina;
 A3W_bleedingTime = compileFinal str A3W_bleedingTime;
 A3W_teamPlayersMap = compileFinal str A3W_teamPlayersMap;
+//A3W_serverNumber = compileFinal str A3W_serverNumber;
+//A3W_NoGlobalVoice = compileFinal str A3W_NoGlobalVoice;
+//A3W_NoSideVoice = compileFinal str A3W_NoSideVoice;
+//A3W_NoCommandVoice = compileFinal str A3W_NoCommandVoice;
+//A3W_NoGlobalVoiceBan = compileFinal str A3W_NoGlobalVoiceBan;
+//A3W_NoSideVoiceBan = compileFinal str A3W_NoSideVoiceBan;
+//A3W_NoCommandVoiceBan = compileFinal str A3W_NoCommandVoiceBan;
+//A3W_VoiceKickTimeout = compileFinal str A3W_VoiceKickTimeout;
 
 // Broadcast config variables
 publicVariable "A3W_startingMoney";
@@ -65,6 +73,13 @@ publicVariable "A3W_unlimitedStamina";
 publicVariable "A3W_bleedingTime";
 publicVariable "A3W_teamPlayersMap";
 publicVariable "A3W_serverNumber";
+publicVariable "A3W_NoGlobalVoice";
+publicVariable "A3W_NoSideVoice";
+publicVariable "A3W_NoCommandVoice";
+publicVariable "A3W_NoGlobalVoiceBan";
+publicVariable "A3W_NoSideVoiceBan";
+publicVariable "A3W_NoCommandVoiceBan";
+publicVariable "A3W_VoiceKickTimeout";
 
 _playerSavingOn = ["A3W_playerSaving"] call isConfigOn;
 _baseSavingOn = ["A3W_baseSaving"] call isConfigOn;
