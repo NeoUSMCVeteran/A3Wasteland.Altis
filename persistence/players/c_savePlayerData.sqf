@@ -27,7 +27,7 @@ savePlayerHandle = _this spawn
 		[_info, ["Name", name player]] call BIS_fnc_arrayPush;
 		[_info, ["LastGroupSide", str side group player]] call BIS_fnc_arrayPush;
 		[_info, ["LastPlayerSide", str playerSide]] call BIS_fnc_arrayPush;
-		[_info, ["BankMoney", player getVariable ["bmoney", 0]] call BIS_fnc_arrayPush; // Not implemented in vanilla mission
+		[_info, ["BankMoney", player getVariable ["bmoney", 0]]] call BIS_fnc_arrayPush; // Not implemented in vanilla mission
 
 		_data = [];
 
