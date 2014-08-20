@@ -12,7 +12,7 @@
 	_pval = player getVariable ["bmoney", 0];
 	_pval = _pval - _val;
 	
-	player setVariable ["bmoney", _pval, false];
+	player setVariable ["bmoney", _pval, true];
 	
 	hint format["You transferred $%1 to %2", _val, name _unit];
 	wiretransfer = [player, _unit, _val]; 

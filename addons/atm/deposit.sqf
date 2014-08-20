@@ -11,8 +11,8 @@
     _bankMoney = _bankMoney + _atmMoney;
     _playerMoney = _playerMoney - _atmMoney;
 	
-	player setVariable ["cmoney", _playerMoney, false];
-	player setVariable ["bmoney", _bankMoney, false];
+	player setVariable ["cmoney", _playerMoney, true];
+	player setVariable ["bmoney", _bankMoney, true];
 	hint format["You deposited $%1", _atmMoney];
 	call fn_savePlayerData;
 	closeDialog 0;

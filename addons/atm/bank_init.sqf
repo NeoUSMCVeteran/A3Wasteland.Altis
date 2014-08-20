@@ -13,7 +13,7 @@ if (isDedicated) then {
 		_pval = player getVariable ["bmoney", 0];
 		_pval = _pval + _val;
 	
-		player setVariable ["bmoney", _pval, false];
+		player setVariable ["bmoney", _pval, true];
         hint format["You received $%1 from %2", _val, name _pcid];
 				
 		call fn_savePlayerData;
