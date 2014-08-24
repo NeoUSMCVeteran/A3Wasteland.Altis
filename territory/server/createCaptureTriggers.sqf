@@ -6,6 +6,8 @@
 # @@Function: Creates server-side capture zone triggers
 #*********************************************************/
 _currentGroup = floor (random 3);
+current_territorygrp_rnd = _currentGroup;
+publicvariable "current_territorygrp_rnd";
 _territoryGroup = format ["Territory_%1",_currentgroup];
 _flagGroup = format ["Flag_%1",_currentgroup];
 if (!isServer) exitWith {};
@@ -18,13 +20,13 @@ if (!isServer) exitWith {};
 	}
 	else
 	{
-	if (["Flag_", _marker] call fn_startsWith) then
+		if (["Flag_", _marker] call fn_startsWith) then
 		{
 			deleteMarker _marker;
 		};
 	};
 	if ([_territoryGroup, _marker] call fn_startsWith) then
-	{
+	{	
 		if ({_x select 0 == _marker} count (["config_territory_markers", []] call getPublicVar) > 0) then
 		{
 			diag_log format ["Creating territory capture trigger for '%1'", _marker];
