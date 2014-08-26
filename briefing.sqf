@@ -200,7 +200,7 @@ player createDiaryRecord ["infos",
 <br/>* NO PLANES are spawned or able for purchase. Will add later.
 <br/>* Vehicles can be saved, use action item to Save Vehicle before log off or after moving it. 
 <br/>* Base items need to be locked for save. Spawn beacon save automatically on restart.
-<br/>* Altis Airport Conquest territories, $15,000 pay out. 
+<br/>* Conquest territories, $15,000 pay out. 
 <br/>* AI are set to Hard.
 "
 ]];
