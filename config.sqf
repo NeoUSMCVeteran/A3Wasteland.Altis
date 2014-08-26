@@ -57,7 +57,13 @@ config_territory_markers = compileFinal str
 	["TERRITORY_1_ALTISAIR_C", "Altis Airport (C)", 15000],
 	["TERRITORY_2_PYRGOS_A", "Pyrgos (A)", 15000],
 	["TERRITORY_2_PYRGOS_B", "Pyrgos (B)", 15000],
-	["TERRITORY_2_PYRGOS_C", "Pyrgos (C)", 15000]
+	["TERRITORY_2_PYRGOS_C", "Pyrgos (C)", 15000],
+	["TERRITORY_3_GHOST_A", "Ghost Hotel (A)", 15000],
+	["TERRITORY_3_GHOST_B", "Ghost Hotel (B)", 15000],
+	["TERRITORY_3_GHOST_C", "Ghost Hotel (C)", 15000],
+	["TERRITORY_4_ISLAND_A", "Island (A)", 15000],
+	["TERRITORY_4_ISLAND_B", "Island (B)", 15000],
+	["TERRITORY_4_ISLAND_C", "Island (C)", 15000]
 	
 ];
 

@@ -2248,7 +2248,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=217;
+		items=220;
 		class Item0
 		{
 			position[]={23044.738,3.1900001,18988.525};
@@ -4090,10 +4090,38 @@ class Mission
 			vehicle="Land_LampAirport_F";
 			skill=0.60000002;
 		};
+		class Item217
+		{
+			position[]={13253.571,21.757954,11705.499};
+			id=343;
+			side="EMPTY";
+			vehicle="Land_Cargo_Tower_V1_No1_F";
+			skill=0.60000002;
+			text="Tower_4_A";
+		};
+		class Item218
+		{
+			position[]={13476.245,12.81438,11974.85};
+			id=344;
+			side="EMPTY";
+			vehicle="Land_Cargo_Tower_V1_No2_F";
+			skill=0.60000002;
+			text="Tower_4_B";
+		};
+		class Item219
+		{
+			position[]={13644.979,22.965235,12297.102};
+			azimut=-90.979599;
+			id=345;
+			side="EMPTY";
+			vehicle="Land_Cargo_Tower_V1_No3_F";
+			skill=0.60000002;
+			text="Tower_4_C";
+		};
 	};
 	class Markers
 	{
-		items=177;
+		items=189;
 		class Item0
 		{
 			position[]={3612.1487,12.11851,13020.892};
@@ -5438,6 +5466,132 @@ class Mission
 			text="A";
 			type="mil_flag";
 			colorName="ColorYellow";
+		};
+		class Item177
+		{
+			position[]={21678.721,26.678999,20954.469};
+			name="TERRITORY_3_GHOST_A";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorYellow";
+			fillName="DiagGrid";
+			a=20;
+			b=20;
+			angle=131.15543;
+		};
+		class Item178
+		{
+			position[]={21680.492,26.694536,20954.639};
+			name="Flag_3_GHOST_A";
+			text="A";
+			type="mil_flag";
+			colorName="ColorYellow";
+			angle=-44.575874;
+		};
+		class Item179
+		{
+			position[]={21823.637,41.037079,21051.375};
+			name="TERRITORY_3_GHOST_B";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorYellow";
+			fillName="DiagGrid";
+			a=15;
+			b=25;
+			angle=268.814;
+		};
+		class Item180
+		{
+			position[]={21826.898,40.517719,21049.326};
+			name="Flag_3_GHOST_B";
+			text="B";
+			type="mil_flag";
+			colorName="ColorYellow";
+			angle=-23.113899;
+		};
+		class Item181
+		{
+			position[]={21973.402,19.138802,21027.572};
+			name="TERRITORY_3_GHOST_C";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorYellow";
+			fillName="DiagGrid";
+			a=30;
+			b=43;
+			angle=314.05399;
+		};
+		class Item182
+		{
+			position[]={21969.24,18.631821,21024.443};
+			name="Flag_3_GHOST_C";
+			text="C";
+			type="mil_flag";
+			colorName="ColorYellow";
+			angle=-25.362162;
+		};
+		class Item183
+		{
+			position[]={13253.753,21.747473,11705.994};
+			name="TERRITORY_4_ISLAND_A";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorYellow";
+			fillName="DiagGrid";
+			a=10;
+			b=10;
+			angle=270.013;
+		};
+		class Item184
+		{
+			position[]={13253.299,21.872433,11706.784};
+			name="Flag_4_ISLAND_A";
+			text="A";
+			type="mil_flag";
+			colorName="ColorYellow";
+			angle=-21.9146;
+		};
+		class Item185
+		{
+			position[]={13475.638,12.771633,11974.953};
+			name="TERRITORY_4_ISLAND_B";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorYellow";
+			fillName="DiagGrid";
+			a=10;
+			b=10;
+			angle=270.013;
+		};
+		class Item186
+		{
+			position[]={13476.366,12.802212,11975.217};
+			name="Flag_4_ISLAND_B";
+			text="B";
+			type="mil_flag";
+			colorName="ColorYellow";
+			angle=-21.9146;
+		};
+		class Item187
+		{
+			position[]={13645.161,22.934685,12297.597};
+			name="TERRITORY_4_ISLAND_C";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorYellow";
+			fillName="DiagGrid";
+			a=10;
+			b=10;
+			angle=270.013;
+		};
+		class Item188
+		{
+			position[]={13644.707,22.917576,12298.387};
+			name="Flag_4_ISLAND_C";
+			text="C";
+			type="mil_flag";
+			colorName="ColorYellow";
+			angle=-21.9146;
 		};
 	};
 	class Sensors
