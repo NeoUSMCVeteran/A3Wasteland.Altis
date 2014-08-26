@@ -54,6 +54,7 @@ A3W_combatAbortDelay = compileFinal str A3W_combatAbortDelay;
 A3W_unlimitedStamina = compileFinal str A3W_unlimitedStamina;
 A3W_bleedingTime = compileFinal str A3W_bleedingTime;
 A3W_teamPlayersMap = compileFinal str A3W_teamPlayersMap;
+A3W_remoteBombStoreRadius = compileFinal str A3W_remoteBombStoreRadius;
 //A3W_serverNumber = compileFinal str A3W_serverNumber;
 //A3W_NoGlobalVoice = compileFinal str A3W_NoGlobalVoice;
 //A3W_NoSideVoice = compileFinal str A3W_NoSideVoice;
@@ -71,13 +72,7 @@ publicVariable "A3W_playerSaving";
 publicVariable "A3W_combatAbortDelay";
 publicVariable "A3W_unlimitedStamina";
 publicVariable "A3W_bleedingTime";
-publicVariable "A3W_teamPlayersMap";
-publicVariable "A3W_serverNumber";
-publicVariable "A3W_NoGlobalVoice";
-publicVariable "A3W_NoSideVoice";
-publicVariable "A3W_NoCommandVoice";
-publicVariable "A3W_NoGlobalVoiceBan";
-publicVariable "A3W_NoSideVoiceBan";
+publicVariable "A3W_remoteBombStoreRadius";
 publicVariable "A3W_NoCommandVoiceBan";
 publicVariable "A3W_VoiceKickTimeout";
 
@@ -157,6 +152,11 @@ if (!isNil "A3W_startHour" || !isNil "A3W_moonLight") then
 	_monthDay = if (["A3W_moonLight"] call isConfigOn) then { 10 } else { 25 };
 	_startHour = ["A3W_startHour", date select 2] call getPublicVar;
 	setDate [2035, 6, _monthDay, _startHour, 0];
+};
+
+if (!isNil "A3W_timeMultiplier") then
+{
+	setTimeMultiplier (["A3W_timeMultiplier", 1] call getPublicVar);
 };
 
 if ((isNil "A3W_buildingLoot" && {["A3W_buildingLootWeapons"] call isConfigOn || {["A3W_buildingLootSupplies"] call isConfigOn}}) || {["A3W_buildingLoot"] call isConfigOn}) then 

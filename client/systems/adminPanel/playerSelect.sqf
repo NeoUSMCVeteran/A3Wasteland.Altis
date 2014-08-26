@@ -106,15 +106,7 @@ if (_uid call isAdmin) then
 			    	pvar_teamKillList = [pvar_teamKillList, _forEachIndex] call BIS_fnc_removeIndex;
 			        publicVariable "pvar_teamKillList";
 			    };
-			}forEach pvar_teamKillList;  
-			
-			{
-			    if(_x select 0 == _targetUID) then
-			    {
-			    	pvar_voiceBanPlayerArray = [pvar_voiceBanPlayerArray, _forEachIndex] call BIS_fnc_removeIndex;
-			        publicVariable "pvar_voiceBanPlayerArray";
-			    };
-			}forEach pvar_voiceBanPlayerArray; 
+			}forEach pvar_teamKillList;       		
 	    };
         case 5: //Remove All Money
 	    {      

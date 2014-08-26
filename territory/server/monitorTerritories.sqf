@@ -69,7 +69,7 @@ currentTerritoryDetails = [];
 {
     _markerName = _x select 0;
     //diag_log format ["Adding %1 to lastCapturePointDetails", _markerName];
-    currentTerritoryDetails set [count currentTerritoryDetails, [_markerName, [], sideUnknown, 0, 0]];
+    currentTerritoryDetails pushBack [_markerName, [], sideUnknown, 0, 0];
 } forEach (["config_territory_markers", []] call getPublicVar);
 
 // This will track how long each loop takes, to monitor how long it really ends up taking when
@@ -123,7 +123,7 @@ _onCaptureStarted =
 // Trigger for when a capture of a territory has ended.
 _onCaptureFinished =
 {
-    private ["_oldTeam", "_captureTeam", "_captureValue", "_captureName", "_captureDescription", "_descriptiveTeamName", "_otherTeams", "_captureColor", "_groupCaptures", "_msg", "_msgOthers"];
+    private ["_oldTeam", "_captureTeam", "_captureValue", "_captureName", "_captureDescription", "_descriptiveTeamName", "_otherTeams", "_captureColor", "_groupCaptures", "_msgWinners", "_msgOthers"];
 
     //diag_log format["_onCapture called with %1", _this];
 
@@ -139,7 +139,7 @@ _onCaptureFinished =
 	{
 		if (!((side _x) in [BLUFOR,OPFOR]) && {{isPlayer _x} count units _x > 0}) then
 		{
-			[_otherTeams, _x] call BIS_fnc_arrayPush;
+			_otherTeams pushBack _x;
 		};
 	} forEach allGroups;
 
@@ -159,14 +159,14 @@ _onCaptureFinished =
 		_captureTeam setVariable ["currentTerritories", _groupCaptures, true];
 	};
 
-	[[[_captureName], false, _captureTeam, true], "updateTerritoryMarkers", _captureTeam, false] call TPG_fnc_MP;
-	[[[_captureName], false, _captureTeam, false], "updateTerritoryMarkers", _otherTeams, false] call TPG_fnc_MP;
+	["pvar_updateTerritoryMarkers", [_captureTeam, [[_captureName], false, _captureTeam, true]]] call fn_publicVariableAll;
+	["pvar_updateTerritoryMarkers", [_otherTeams, [[_captureName], false, _captureTeam, false]]] call fn_publicVariableAll;
 
-	_msg = format ["Your team has successfully captured %1 and you've received $%2", _captureDescription, _captureValue];
-    [[_msg, _captureValue], "territoryActivityHandler", _captureTeam, false] call TPG_fnc_MP;
+	_msgWinners = format ["Your team has successfully captured %1 and you've received $%2", _captureDescription, _captureValue];
+	["pvar_territoryActivityHandler", [_captureTeam, [_msgWinners, _captureValue]]] call fn_publicVariableAll;
 
-    _msgOthers = format ["%1 has captured %2", _descriptiveTeamName, _captureDescription];
-    [[_msgOthers], "territoryActivityHandler", _otherTeams, false] call TPG_fnc_MP;
+	_msgOthers = format ["%1 has captured %2", _descriptiveTeamName, _captureDescription];
+	["pvar_territoryActivityHandler", [_otherTeams, [_msgOthers]]] call fn_publicVariableAll;
 };
 
 // Give the human readable name for a team
@@ -353,7 +353,7 @@ _updatePlayerTerritoryActivity =
             };
 
             _territoryActivity set [1, _capturePeriod - _newCapPointTimer];
-            _newPlayersWithTerritoryActivity set [count _newPlayersWithTerritoryActivity, _playerUID];
+            _newPlayersWithTerritoryActivity pushBack _playerUID;
         };
 
         //diag_log format["Setting TERRITORY_ACTIVITY to %1 for %2", _territoryActivity, _player];
@@ -543,7 +543,7 @@ while {true} do
                 // Make the entry
                 //diag_log format["%1 has TERRITORY_OCCUPATION for %2", name _x, _curCapPoint];
                 //diag_log format["CAP PLAYER LOOP: Adding %1 to _territoryOccupiersMapSingle at %2", _x, _curCapPoint];
-                _territoryOccupiersMapSingle set [count _territoryOccupiersMapSingle, [_curCapPoint, _x]];
+                _territoryOccupiersMapSingle pushBack [_curCapPoint, _x];
             };
         };
 

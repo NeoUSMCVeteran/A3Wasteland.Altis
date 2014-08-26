@@ -148,12 +148,12 @@ storePurchaseHandle = _this spawn
 			player connectTerminalToUav _vehicle;
 		};
 		
-		// _vehicle
-		_vehicle setVariable ["ownerUID", getPlayerUID player, true];
-		_vehicle setVariable ["ownerN", name player, true];
-		_vehicle lock 2; // force lock
-		_vehicle setVariable ["objectLocked", false, true]; // false,true allow tow and lift
-		_vehicle setVariable ["CanSell", 1, true];
+		_vehicle
+		// _vehicle setVariable ["ownerUID", getPlayerUID player, true];
+		// _vehicle setVariable ["ownerN", name player, true];
+		// _vehicle lock 2; // force lock
+		// _vehicle setVariable ["objectLocked", false, true]; // false,true allow tow and lift
+		// _vehicle setVariable ["CanSell", 1, true];
 	};
 	{
 		if (_itemText == _x select 0 && _itemData == _x select 1) exitWith

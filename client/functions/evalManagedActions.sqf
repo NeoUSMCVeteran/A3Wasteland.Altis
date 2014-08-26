@@ -23,7 +23,7 @@ while {true} do
 	{
 		managedActions_arrayEval = true;
 
-		_evalSleepTime = _evalSleepTime / _actionsCount;
+		_evalSleepTime = (_evalSleepTime / _actionsCount) max 0.01;
 
 		{
 			if !(_x isEqualTo -1) then
@@ -71,7 +71,7 @@ while {true} do
 			{
 				if (!(_x isEqualTo -1) && {isNull (_x select 0)}) then
 				{
-					_cleanPvars set [count _cleanPvars, _x select 2];
+					_cleanPvars pushBack (_x select 2);
 					_oldArray set [_forEachIndex, -1];
 				};
 			} forEach _oldArray;
