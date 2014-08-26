@@ -10,7 +10,7 @@ _vehicle = _this select 0;
 // _toolkitFullRepair = [_this, 1, false, [false]] call BIS_fnc_param;
 
 _vehicle setVariable [call vChecksum, true];
-_vehicle disableTIEquipment false;
+_vehicle disableTIEquipment true;
 
 // if (_toolkitFullRepair) then { _vehicle spawn vehicleRepair };
 
