@@ -66,7 +66,8 @@ class Mission
 		"A3_Structures_F_EPC_Civ_Accessories",
 		"A3_Data_F",
 		"A3_Structures_F_Research",
-		"A3_Structures_F_Civ_Lamps"
+		"A3_Structures_F_Civ_Lamps",
+		"A3_Misc_F_Helpers"
 	};
 	addOnsAuto[]=
 	{
@@ -83,6 +84,7 @@ class Mission
 		"A3_Structures_F_Research",
 		"A3_Structures_F_Mil_Cargo",
 		"A3_Structures_F_Civ_Lamps",
+		"A3_Misc_F_Helpers",
 		"a3_map_altis"
 	};
 	randomSeed=14957468;
@@ -2248,7 +2250,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=220;
+		items=225;
 		class Item0
 		{
 			position[]={23044.738,3.1900001,18988.525};
@@ -4117,6 +4119,66 @@ class Mission
 			vehicle="Land_Cargo_Tower_V1_No3_F";
 			skill=0.60000002;
 			text="Tower_4_C";
+		};
+		class Item220
+		{
+			position[]={14490.322,18.765318,16384};
+			azimut=186.14101;
+			offsetY=1;
+			id=346;
+			side="EMPTY";
+			vehicle="UserTexture1m_F";
+			skill=0.60000002;
+			text="PROMOTOR_GORACK_A_1";
+			init="this setObjectTexture [0, ""client\images\promoteTextures\gorack_dot_net-001.jpg""]; this attachTo [sign, [0,-0.05,0.6]]; ";
+		};
+		class Item221
+		{
+			position[]={16646.219,11.183464,12798.638};
+			azimut=300.155;
+			offsetY=7;
+			id=347;
+			side="EMPTY";
+			vehicle="UserTexture10m_F";
+			skill=0.60000002;
+			text="PROMOTOR_GORACK_A_4";
+			init="this setObjectTexture [0, ""client\images\promoteTextures\gorack_dot_net-001.jpg""]; this attachTo [sign, [0,-0.05,0.6]]; ";
+		};
+		class Item222
+		{
+			position[]={16774.455,18.347736,12592.915};
+			azimut=269.535;
+			offsetY=2;
+			id=348;
+			side="EMPTY";
+			vehicle="UserTexture1m_F";
+			skill=0.60000002;
+			text="PROMOTOR_GORACK_A_5";
+			init="this setObjectTexture [0, ""client\images\promoteTextures\gorack_dot_net-001.jpg""]; this attachTo [sign, [0,-0.05,0.6]]; ";
+		};
+		class Item223
+		{
+			position[]={3574.1846,11.455622,12799.138};
+			azimut=-57.8895;
+			offsetY=2;
+			id=349;
+			side="EMPTY";
+			vehicle="UserTexture1m_F";
+			skill=0.60000002;
+			text="PROMOTOR_GORACK_A_6";
+			init="this setObjectTexture [0, ""client\images\promoteTextures\gorack_dot_net-001.jpg""]; this attachTo [sign, [0,-0.05,0.6]]; ";
+		};
+		class Item224
+		{
+			position[]={25619.998,20.90266,21354.334};
+			azimut=495.431;
+			offsetY=2;
+			id=350;
+			side="EMPTY";
+			vehicle="UserTexture1m_F";
+			skill=0.60000002;
+			text="PROMOTOR_GORACK_A_3";
+			init="this setObjectTexture [0, ""client\images\promoteTextures\gorack_dot_net-001.jpg""]; this attachTo [sign, [0,-0.05,0.6]]; ";
 		};
 	};
 	class Markers
