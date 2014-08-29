@@ -69,6 +69,12 @@ publicVariable "A3W_bleedingTime";
 publicVariable "A3W_remoteBombStoreRadius";
 publicVariable "A3W_serverNumber";
 publicVariable "A3W_NoGlobalVoice";
+publicVariable "A3W_NoSideVoice";
+publicVariable "A3W_NoCommandVoice";
+publicVariable "A3W_NoGlobalVoiceBan";
+publicVariable "A3W_NoSideVoiceBan";
+publicVariable "A3W_NoCommandVoiceBan";
+publicVariable "A3W_VoiceKickTimeout";
 publicVariable "A3W_vehicleThermals";
 
 _playerSavingOn = ["A3W_playerSaving"] call isConfigOn;
