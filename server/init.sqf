@@ -66,6 +66,7 @@ publicVariable "A3W_playerSaving";
 publicVariable "A3W_combatAbortDelay";
 publicVariable "A3W_unlimitedStamina";
 publicVariable "A3W_bleedingTime";
+publicVariable "A3W_teamPlayersMap";
 publicVariable "A3W_remoteBombStoreRadius";
 publicVariable "A3W_serverNumber";
 publicVariable "A3W_NoGlobalVoice";
