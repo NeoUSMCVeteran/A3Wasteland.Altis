@@ -27,6 +27,9 @@ _player unlinkItem "ItemGPS";
 // Remove NVG
 if (hmd _player != "") then { _player unlinkItem hmd _player };
 
+// Add NVG
+_player linkItem "NVGoggles";
+
 _player addBackpack "B_AssaultPack_rgr";
 switch (typeOf _player) do {
 	case "B_medic_F": { _player addItem "MediKit" };
