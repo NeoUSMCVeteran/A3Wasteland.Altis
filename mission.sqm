@@ -90,8 +90,8 @@ class Mission
 	randomSeed=14957468;
 	class Intel
 	{
-		briefingName="A3Wasteland Altis v0.9ghj";
-		overviewText="Wasteland survival sandbox by Team Wasteland - visit A3Wasteland.com for more details";
+		briefingName="TOP A3Wasteland Altis v0.9gh";
+		overviewText="TOP Wasteland Conquest Altis by TOPARMA.com. Core developed by A3Wasteland.com";
 		resistanceWest=0;
 		startWeather=0.10000001;
 		startWind=0.30000001;

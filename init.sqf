@@ -40,7 +40,7 @@ if (!isDedicated) then
 {
 	[] spawn
 	{
-		9999 cutText ["Welcome to A3Wasteland, please wait for your client to initialize", "BLACK", 0.01];
+		9999 cutText ["Welcome to TOP A3Wasteland, please wait for your client to initialize. IT CAN TAKE A WHILE, check toparma.com to see how you can help.", "BLACK", 0.01];
 		
 		waitUntil {!isNull player};
 		removeAllWeapons player;
