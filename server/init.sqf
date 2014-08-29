@@ -56,13 +56,7 @@ A3W_bleedingTime = compileFinal str A3W_bleedingTime;
 A3W_teamPlayersMap = compileFinal str A3W_teamPlayersMap;
 A3W_remoteBombStoreRadius = compileFinal str A3W_remoteBombStoreRadius;
 A3W_serverNumber = compileFinal str A3W_serverNumber;
-A3W_NoGlobalVoice = compileFinal str A3W_NoGlobalVoice;
-//A3W_NoSideVoice = compileFinal str A3W_NoSideVoice;
-//A3W_NoCommandVoice = compileFinal str A3W_NoCommandVoice;
-//A3W_NoGlobalVoiceBan = compileFinal str A3W_NoGlobalVoiceBan;
-//A3W_NoSideVoiceBan = compileFinal str A3W_NoSideVoiceBan;
-//A3W_NoCommandVoiceBan = compileFinal str A3W_NoCommandVoiceBan;
-//A3W_VoiceKickTimeout = compileFinal str A3W_VoiceKickTimeout;
+
 
 // Broadcast config variables
 publicVariable "A3W_startingMoney";
@@ -75,6 +69,7 @@ publicVariable "A3W_bleedingTime";
 publicVariable "A3W_remoteBombStoreRadius";
 publicVariable "A3W_serverNumber";
 publicVariable "A3W_NoGlobalVoice";
+publicVariable "A3W_vehicleThermals";
 
 _playerSavingOn = ["A3W_playerSaving"] call isConfigOn;
 _baseSavingOn = ["A3W_baseSaving"] call isConfigOn;
@@ -84,6 +79,7 @@ _warchestSavingOn = ["A3W_warchestSaving"] call isConfigOn;
 _warchestMoneySavingOn = ["A3W_warchestMoneySaving"] call isConfigOn;
 _beaconSavingOn = ["A3W_spawnBeaconSaving"] call isConfigOn;
 _vehicleSavingOn = ["A3W_vehicleSaving"] call isConfigOn;
+vehicleThermalsOn = ["A3W_vehicleThermals"] call isConfigOn;
 
 _serverSavingOn = (_baseSavingOn || _boxSavingOn || _staticWeaponSavingOn || {_warchestSavingOn} || {_warchestMoneySavingOn} || {_beaconSavingOn});
 

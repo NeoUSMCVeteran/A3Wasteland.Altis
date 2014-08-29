@@ -12,11 +12,23 @@ A3W_teamPlayersMap = 1;            // Show all friendly players on the map at al
 A3W_showGunStoreStatus = 1;        // Show enemy and friendly presence at gunstores on map (0 = no, 1 = yes)
 A3W_gunStoreIntruderWarning = 1;   // Warn players in gunstore areas of enemy intruders (0 = no, 1 = yes)
 A3W_remoteBombStoreRadius = 100;   // Prevent players from placing remote explosives within this distance from any store (0 = disabled)
+A3W_vehicleThermals = 1;		   // Allow vehicles to use thermals (0 = disabled)
 
 // Player settings
 A3W_startingMoney = 100;           // Amount of money that players start with
 A3W_unlimitedStamina = 1;          // Allow unlimited sprinting, jumping, etc. (0 = no, 1 = yes) - this also removes energy drinks from the mission
 A3W_bleedingTime = 60;             // Time in seconds for which to allow revive after a critical injury (minimum 10 seconds)
+
+
+//Voice
+A3W_NoGlobalVoice = 3;
+A3W_NoSideVoice = 0;
+A3W_NoCommandVoice = 0;
+A3W_NoGlobalVoiceBan = 3; //ban player for getting kicked x times, 0 to disable
+A3W_NoSideVoiceBan = 3; //ban player for getting kicked x times, 0 to disable
+A3W_NoCommandVoiceBan = 3; //ban player for getting kicked x times, 0 to disable
+A3W_VoiceKickTimeout = 5*60; //time in seconds where using voice a second time will get you kicked. After this has ellapsed, you will get a warning again instead of a kick
+
 
 // Persistence settings (requires iniDBI)
 A3W_playerSaving = 0;              // Save player data like position, health, inventory, etc. (0 = no, 1 = yes)
