@@ -1,3 +1,8 @@
+//	@file Version: 1.1
+//	@file Name: x_reload.sqf
+//	@file Author: Wiking, Lodac, unknown initial author
+
+#define PRICE_RELATIONSHIP 4
 
 _vehicle = _this;
 _driver = driver _vehicle;
@@ -26,6 +31,17 @@ if((player == driver _vehicle) && (!_eng))then {
 	_playerMoney = player getVariable "cmoney";
 
 	_price = 500;
+	
+	//find price from vehicle store prices
+	{	
+	if (_type == _x select 1) then
+	{	
+	_price = _x select 2;
+	_price = _price / PRICE_RELATIONSHIP;
+	};
+} forEach (call allVehStoreVehicles);
+	
+	/*
 	if(_type == "B_G_Offroad_01_armed_F") then {_price = 625;};
 	if(_type == "B_Truck_01_medical_F") then {_price = 1500;};
 	if(_type == "B_Truck_01_Repair_F") then {_price = 1875;};
@@ -70,6 +86,7 @@ if((player == driver _vehicle) && (!_eng))then {
 	if(_type == "O_Boat_Armed_01_hmg_F") then {_price = 1000;};
 	if(_type == "B_Boat_Armed_01_minigun_F") then {_price = 1000;};
 	if(_type == "I_Boat_Armed_01_minigun_F") then {_price = 1000;};
+	*/
 
 	if (_playerMoney < _price) then {
 		_text = format ["Not enough money! You need $%1 to resupply %2. Service cancelled!",_price,typeOf _vehicle];
