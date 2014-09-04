@@ -32,9 +32,21 @@ A3W_scriptThreads = [];
 
 //init Wasteland Core
 [] execVM "config.sqf";
-[] execVM "storeConfig.sqf"; // Separated as its now v large
 [] execVM "briefing.sqf";
 [] execVM "addons\atm\bank_init.sqf";
+
+// load external config
+externalConfigFolder = "A3Wasteland_settings";
+
+if (loadFile (externalConfigFolder + "\storeConfig.sqf") != "") then
+{
+    [] execVM (externalConfigFolder + "\storeConfig.sqf");
+}
+else
+{
+	diag_log format["[WARNING] A3W storeConfig file '%1\storeConfig.sqf' was not found. Using default settings!", externalConfigFolder];
+	[] execVM "storeConfig.sqf"; // Separated as its now v large
+};
 
 if (!isDedicated) then
 {
