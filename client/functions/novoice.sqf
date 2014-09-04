@@ -46,7 +46,7 @@ _voiceBanAction = {
 			
 			if(((_x select 1) + (_x select 2) + (_x select 3)) > 1) then //delete player data on second kick and afterwards so it doesn't get abused to 'combatlog'
 			{
-				[] spawn fn_deletePlayerData;
+				_uid call fn_deletePlayerSave;
 			};
 		};
 	} forEach pvar_voiceBanPlayerArray;
