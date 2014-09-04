@@ -126,8 +126,23 @@ while {true} do
 	} else {
 		format ["%1 <img size='0.7' image='client\icons\running_man.paa'/>", 100 - ceil((getFatigue player) * 100)];
 	};
+	//AJ + 1  - Add Bankmoney Indicator
+	if (player getVariable "bmoney" > 999999) then
+	{
+		_hudNumber = ((player getVariable "bmoney") / 1000000);
+		_hudNumber = round (_hudnumber * (100)) / 100; //round to two decimal places
+		_str = format["%1<br/>%2 M <img size='0.7' image='client\icons\bank.paa'/>", _str, _hudnumber];
+	} else {
 	_str = format["%1<br/>%2 <img size='0.7' image='client\icons\bank.paa'/>", _str, player getVariable "bmoney"];
+	};
+	if (player getVariable "cmoney" > 999999) then
+	{
+		_hudNumber = ((player getVariable "cmoney") / 1000000);
+		_hudNumber = round (_hudnumber * (100)) / 100; //round to two decimal places
+		_str = format["%1<br/>%2 M <img size='0.7' image='client\icons\money.paa'/>", _str, _hudnumber];
+	} else {
 	_str = format["%1<br/>%2 <img size='0.7' image='client\icons\money.paa'/>", _str, player getVariable "cmoney"];
+	};
 	_str = format["%1<br/>%2 <img size='0.7' image='client\icons\water.paa'/>", _str, ceil (thirstLevel max 0)];
 	_str = format["%1<br/>%2 <img size='0.7' image='client\icons\food.paa'/>", _str, ceil (hungerLevel max 0)];
 	_str = format["%1<br/><t color='%2'>%3</t> <img size='0.7' image='client\icons\health.paa'/>", _str, _healthTextColor, _health];
