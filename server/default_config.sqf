@@ -13,6 +13,7 @@ A3W_showGunStoreStatus = 1;        // Show enemy and friendly presence at gunsto
 A3W_gunStoreIntruderWarning = 1;   // Warn players in gunstore areas of enemy intruders (0 = no, 1 = yes)
 A3W_remoteBombStoreRadius = 100;   // Prevent players from placing remote explosives within this distance from any store (0 = disabled)
 A3W_vehicleThermals = 0;		   // Allow vehicles to use thermals (0 = disabled)
+A3W_resupplyCostPR = 4;			   // Determine resupply cost by vehicle store cost / A3W_resupplyCostPR. (4 = default, %25 percent)
 
 // Player settings
 A3W_startingMoney = 100;           // Amount of money that players start with

@@ -77,6 +77,7 @@ publicVariable "A3W_NoSideVoiceBan";
 publicVariable "A3W_NoCommandVoiceBan";
 publicVariable "A3W_VoiceKickTimeout";
 publicVariable "A3W_vehicleThermals";
+publicVariable "A3W_resupplyCostPR";
 
 _playerSavingOn = ["A3W_playerSaving"] call isConfigOn;
 _baseSavingOn = ["A3W_baseSaving"] call isConfigOn;
