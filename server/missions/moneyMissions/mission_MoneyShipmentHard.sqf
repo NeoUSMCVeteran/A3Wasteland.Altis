@@ -1,9 +1,9 @@
 //	@file Version: 2
 //	@file Name: mission_MoneyShipmentHard.sqf
 //	@file Author: JoSchaap / routes by Del1te - (original idea by Sanjo)
-//  @file contributors: Argietaco for TOP Wasteland
+/	 @file contributors: Argietaco for TOP Wasteland
 //	@file Created: 31/08/2013 18:19
-//  @file updated: 9/05/2014 
+/	 @file updated: 9/05/2014 
 //	@file Args: none
 
 if (!isServer) exitwith {};
