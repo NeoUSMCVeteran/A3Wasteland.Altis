@@ -10,8 +10,16 @@ player createDiarySubject ["credits", "Credits"];
 
 player createDiaryRecord ["changelog",
 [
-"0.9ghj",
+"0.9gh",
 "
+<br/> 09/05/2014 
+<br/> [Removed] UAV Terminal, unable to get out of vehicle.
+<br/> [Added] New Money Shipment Missions. 
+<br/> [Added] Vehicle Store north of Kavala - Power Plant area.
+<br/> [Fixed] Money values display correctly over 1 Mil.
+<br/> [Changed] Resupply cost is 25% of cost of vehicle - pulls cost from storeconfig. 
+<br/> [Fixed] deletePlayerData to deletePlayerSave - Money lost glitch in heli.
+<br/> 
 <br/> 08/09/2014 - 1pm
 <br/> [Added] Vehicle Lock once Vehicle Saved.
 <br/> 
