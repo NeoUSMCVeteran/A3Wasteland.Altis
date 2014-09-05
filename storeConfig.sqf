@@ -490,9 +490,9 @@ genItemArray = compileFinal str
 	["Quadrotor UAV (NATO)", "B_UAV_01_backpack_F", 500, "backpack"],
 	["Quadrotor UAV (CSAT)", "O_UAV_01_backpack_F", 500, "backpack"],
 	["Quadrotor UAV (AAF)", "I_UAV_01_backpack_F", 500, "backpack"],
-	["UAV Terminal (NATO)", "B_UavTerminal", 150, "gps"],
-	["UAV Terminal (CSAT)", "O_UavTerminal", 150, "gps"],
-	["UAV Terminal (AAF)", "I_UavTerminal", 150, "gps"],
+	// ["UAV Terminal (NATO)", "B_UavTerminal", 150, "gps"],
+	// ["UAV Terminal (CSAT)", "O_UavTerminal", 150, "gps"],
+	// ["UAV Terminal (AAF)", "I_UavTerminal", 150, "gps"],
 	["GPS", "ItemGPS", 100, "gps"],
 	["First Aid Kit", "FirstAidKit", 25, "item"],
 	["Medikit", "Medikit", 150, "item"],
@@ -606,14 +606,14 @@ landArray = compileFinal str
 	["Zamak Fuel", "I_Truck_02_fuel_F", 4000, "vehicle"],
 	["Zamak Medical", "I_Truck_02_medical_F", 6000, "vehicle"],
 	["Zamak Repair", "I_Truck_02_box_F", 7000, "vehicle"],
-	["Zamak Ammo", "I_Truck_02_ammo_F", 14000, "vehicle"],
+	["Zamak Ammo", "I_Truck_02_ammo_F", 14000, "vehicle"]
 
-	["UGV Stomper (NATO)", "B_UGV_01_F", 2000, "vehicle"],
-	["UGV Stomper RCWS (NATO)", "B_UGV_01_rcws_F", 10000, "vehicle"],
-	["UGV Stomper (AAF)", "I_UGV_01_F", 2000, "vehicle"],
-	["UGV Stomper RCWS (AAF)", "I_UGV_01_rcws_F", 10000, "vehicle"],
-	["UGV Saif (CSAT)", "O_UGV_01_F", 2000, "vehicle"],
-	["UGV Saif RCWS (CSAT)", "O_UGV_01_rcws_F", 10000, "vehicle"]
+	// ["UGV Stomper (NATO)", "B_UGV_01_F", 2000, "vehicle"],
+	// ["UGV Stomper RCWS (NATO)", "B_UGV_01_rcws_F", 10000, "vehicle"],
+	// ["UGV Stomper (AAF)", "I_UGV_01_F", 2000, "vehicle"],
+	// ["UGV Stomper RCWS (AAF)", "I_UGV_01_rcws_F", 10000, "vehicle"],
+	// ["UGV Saif (CSAT)", "O_UGV_01_F", 2000, "vehicle"],
+	// ["UGV Saif RCWS (CSAT)", "O_UGV_01_rcws_F", 10000, "vehicle"]
 ];
 
 armoredArray = compileFinal str
