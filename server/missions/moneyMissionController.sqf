@@ -13,7 +13,10 @@ diag_log "WASTELAND SERVER - Started Money Mission State";
 
 _MoneyMissions = 
 [
-	["mission_MoneyShipment", 1],
+	["mission_MoneyShipmentEasy", 1],
+	["mission_MoneyShipmentMedium", 1],
+	["mission_MoneyShipmentHard", 1],
+	["mission_MoneyShipmentExtreme", 1],
 	["mission_SunkenTreasure", 1]
 //  	["mission_MobMoney", 1]
 
