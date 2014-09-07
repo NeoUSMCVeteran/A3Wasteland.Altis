@@ -221,7 +221,7 @@ _marker = createMarker [_missionMarkerName, position leader _group];
 _marker setMarkerType "mil_destroy";
 _marker setMarkerSize [1.25, 1.25];
 _marker setMarkerColor "ColorRed";
-_marker setMarkerText "Medium armed Money Shipment (200k)";
+_marker setMarkerText "Medium Armed Money Shipment (200k)";
 
 _picture = getText (configFile >> "CfgVehicles" >> _veh2 >> "picture");
 _vehicleName = getText (configFile >> "CfgVehicles" >> _veh2 >> "displayName");
