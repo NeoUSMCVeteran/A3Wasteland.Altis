@@ -487,9 +487,9 @@ backpackArray = compileFinal str
 
 genItemArray = compileFinal str
 [
-	["Quadrotor UAV (NATO)", "B_UAV_01_backpack_F", 500, "backpack"],
-	["Quadrotor UAV (CSAT)", "O_UAV_01_backpack_F", 500, "backpack"],
-	["Quadrotor UAV (AAF)", "I_UAV_01_backpack_F", 500, "backpack"],
+	// ["Quadrotor UAV (NATO)", "B_UAV_01_backpack_F", 500, "backpack"],
+	// ["Quadrotor UAV (CSAT)", "O_UAV_01_backpack_F", 500, "backpack"],
+	// ["Quadrotor UAV (AAF)", "I_UAV_01_backpack_F", 500, "backpack"],
 	// ["UAV Terminal (NATO)", "B_UavTerminal", 150, "gps"],
 	// ["UAV Terminal (CSAT)", "O_UavTerminal", 150, "gps"],
 	// ["UAV Terminal (AAF)", "I_UavTerminal", 150, "gps"],
