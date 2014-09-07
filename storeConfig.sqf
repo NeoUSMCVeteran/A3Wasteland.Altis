@@ -591,22 +591,22 @@ landArray = compileFinal str
 	["HEMTT Fuel", "B_Truck_01_fuel_F", 5000, "vehicle"],
 	["HEMTT Medical", "B_Truck_01_medical_F", 6000, "vehicle"],
 	["HEMTT Repair", "B_Truck_01_Repair_F", 7500, "vehicle"],
-	["HEMTT Ammo", "B_Truck_01_ammo_F", 15000, "vehicle"],
+	// ["HEMTT Ammo", "B_Truck_01_ammo_F", 15000, "vehicle"],
 
-	["Tempest Device", "O_Truck_03_device_F", 2500, "vehicle"],
+	["Resupply Truck", "O_Truck_03_device_F", 5000, "vehicle"],
 	["Tempest Transport", "O_Truck_03_transport_F", 3000, "vehicle"],
 	["Tempest Covered", "O_Truck_03_covered_F", 4000, "vehicle"],
 	["Tempest Fuel", "O_Truck_03_fuel_F", 5000, "vehicle"],
 	["Tempest Medical", "O_Truck_03_medical_F", 6000, "vehicle"],
 	["Tempest Repair", "O_Truck_03_repair_F", 7500, "vehicle"],
-	["Tempest Ammo", "O_Truck_03_ammo_F", 15000, "vehicle"],
+	// ["Tempest Ammo", "O_Truck_03_ammo_F", 15000, "vehicle"],
 
 	["Zamak Transport", "I_Truck_02_transport_F", 2000, "vehicle"],
 	["Zamak Covered", "I_Truck_02_covered_F", 3000, "vehicle"],
 	["Zamak Fuel", "I_Truck_02_fuel_F", 4000, "vehicle"],
 	["Zamak Medical", "I_Truck_02_medical_F", 6000, "vehicle"],
-	["Zamak Repair", "I_Truck_02_box_F", 7000, "vehicle"],
-	["Zamak Ammo", "I_Truck_02_ammo_F", 14000, "vehicle"]
+	["Zamak Repair", "I_Truck_02_box_F", 7000, "vehicle"]
+	// ["Zamak Ammo", "I_Truck_02_ammo_F", 14000, "vehicle"]
 
 	// ["UGV Stomper (NATO)", "B_UGV_01_F", 2000, "vehicle"],
 	// ["UGV Stomper RCWS (NATO)", "B_UGV_01_rcws_F", 10000, "vehicle"],
