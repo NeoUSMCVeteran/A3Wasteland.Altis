@@ -25,13 +25,13 @@
 	</Package>
 	<Package name="Loading">
 		<Key ID="STR_WL_Loading_Teamkiller">
-			<English>You are considered team-killer and therefore not allowed in BLUFOR or OPFOR teams. You will shortly be kicked back to the lobby where you can only join Independent and killing anyone is allowed.</English>
+			<English>You are considered team-killer and therefore not allowed in BLUFOR or OPFOR teams. You will shortly be kicked back to the lobby where you can only join Independent and killing anyone is allowed. (ADMIN WILL NOT UNLOCK YOU)</English>
 		</Key>
 		<Key ID="STR_WL_Loading_Teamswitched">
-			<English>You have played as %1 for too long and cannot switch to the other team. You can still play as Independent. (or if online, ask an admin to unlock you)</English>
+			<English>You have played as %1 for too long and cannot switch to the other team. You can still play as Independent. (ADMIN WILL NOT MOVE YOU)</English>
 		</Key>
 		<Key ID="STR_WL_Loading_GlobalVoice">
-			<English>You have been kicked too many times for using voice. Repeal BAN on Teamspeak: ts.toparma.com .</English>
+			<English>You have been kicked too many times for using voice. You can join another server or wait until server restart.</English>
 		</Key>
 	</Package>
 	<Package name="Gameplay">
@@ -56,7 +56,7 @@
 	</Package>
 	<Package name="TeamKillWarningMessage">
 		<Key ID="STR_TK_MESSAGE">
-			<English>&lt;t size='2' color='#ff0000'&gt;Team killing is against the rules!&lt;/t&gt;&lt;br/&gt;If this was a mistake then you must explain yourself and say sorry, otherwise they will mark you as team-killer and you will get kicked.</English>
+			<English>&lt;t size='2' color='#ff0000'&gt;Team killing is frowned upon!&lt;/t&gt;&lt;br/&gt;If this was a mistake then you must explain yourself and say sorry, otherwise they will mark you as team-killer and you will get kicked.</English>
 		</Key>
 	</Package>
 	<Package name="Diary">
