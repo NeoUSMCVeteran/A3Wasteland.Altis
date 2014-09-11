@@ -88,7 +88,7 @@ else
 	if (_dead && alive vehicle _unit) then
 	{
 		_unit setVariable ["FAR_isUnconscious", 1, true];
-		(getPlayerUID _unit) call fn_deletePlayerSave;
+		[] spawn fn_deletePlayerData;
 
 		_unit allowDamage false;
 		if (vehicle _unit == _unit) then { [_unit, "AinjPpneMstpSnonWrflDnon"] call switchMoveGlobal };
