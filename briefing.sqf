@@ -12,6 +12,12 @@ player createDiaryRecord ["changelog",
 [
 "0.9gh",
 "
+<br/>
+<br/>
+<br/> 09/11/2014
+<br/> [Removed] Ammo Trunks
+<br/> [Added] Resupply Trunk - Mobile resupply truck, resupply cost is pulled from Bank.
+<br/>
 <br/> 09/05/2014 
 <br/> [Removed] UAV Terminal, unable to get out of vehicle.
 <br/> [Added] New Money Shipment Missions. 
