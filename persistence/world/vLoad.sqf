@@ -63,7 +63,17 @@ if (!isNil "_exists" && {_exists}) then
 					_obj setVariable ["baseSaving_hoursAlive", _hoursAlive];
 					_obj setVariable ["baseSaving_spawningTime", diag_tickTime];
 					_obj setVariable ["R3F_LOG_est_transporte_par", _obj, false];
-					
+					if (vehicleThermalsOn) then
+					{
+						_obj disableTIEquipment false;
+					}
+					else
+					{
+						if !(_obj isKindOf "UAV_02_base_F") then
+						{						
+							_obj disableTIEquipment true;
+						};
+					};
 					if (_allowDamage > 0) then
 					{
 						_obj setDamage _damage;
