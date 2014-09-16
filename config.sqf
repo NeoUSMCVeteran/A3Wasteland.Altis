@@ -23,7 +23,11 @@ cityList = compileFinal str
 	["Town_14", 200, "Panochori"],
 	["Town_15", 200, "Charkia"],
 	["Town_17", 150, "Oreokastro"],
-	["Town_19", 125, "Negades"]
+	["Town_19", 125, "Negades"],
+	["Town_22", 200, "Kore"],
+	["Town_26", 125, "Panagia"],
+	["Town_28", 200, "Feres"]
+	
 
 ];
 
@@ -58,12 +62,12 @@ config_territory_markers = compileFinal str
 	["TERRITORY_2_PYRGOS_A", "Pyrgos (A)", 15000],
 	["TERRITORY_2_PYRGOS_B", "Pyrgos (B)", 15000],
 	["TERRITORY_2_PYRGOS_C", "Pyrgos (C)", 15000],
-	["TERRITORY_3_GHOST_A", "Ghost Hotel (A)", 15000],
-	["TERRITORY_3_GHOST_B", "Ghost Hotel (B)", 15000],
-	["TERRITORY_3_GHOST_C", "Ghost Hotel (C)", 15000],
-	["TERRITORY_4_ISLAND_A", "Island (A)", 15000],
-	["TERRITORY_4_ISLAND_B", "Island (B)", 15000],
-	["TERRITORY_4_ISLAND_C", "Island (C)", 15000]
+	["TERRITORY_3_SELAKANO_A", "SELAKANO (A)", 15000],
+	["TERRITORY_3_SELAKANO_B", "SELAKANO (B)", 15000],
+	["TERRITORY_3_SELAKANO_C", "SELAKANO (C)", 15000],
+	["TERRITORY_4_KORE_A", "KORE (A)", 15000],
+	["TERRITORY_4_KORE_B", "KORE (B)", 15000],
+	["TERRITORY_4_KORE_C", "KORE (C)", 15000]
 	
 ];
 
