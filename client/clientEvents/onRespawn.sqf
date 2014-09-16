@@ -29,10 +29,18 @@ if (!isNull _group && {group _player != _group}) then
 
 if (!isServer) then
 {
-	[_player, "handleCorpseOnLeave", false] spawn TPG_fnc_MP; // setup corpse deletion when leaving while alive
+	// setup corpse deletion when leaving while alive
+	pvar_handleCorpseOnLeave = _player;
+	publicVariableServer "pvar_handleCorpseOnLeave";
 };
 
-_respawnPos = markerPos "respawn_west";
+_respawnPos = markerPos (switch (playerSide) do
+{
+	case BLUFOR:      { "respawn_west" };
+	case OPFOR:       { "respawn_east" };
+	case INDEPENDENT: { "respawn_guerrila" };
+	default           { "respawn_civilian" };
+});
 
 if !(_respawnPos isEqualTo [0,0,0]) then
 {
