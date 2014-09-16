@@ -13,6 +13,11 @@ player createDiaryRecord ["changelog",
 "0.9gh",
 "
 <br/>
+<br/> 09/11/2014
+<br/> 
+<br/> [Changed] Island and Ghost Hotel to Selakano and Kore
+<br/> [Added] Town spawn Kore, Selakano, Panagia
+<br/> [Merge] A3Wasteland - 960 commits 
 <br/>
 <br/> 09/11/2014
 <br/> [Removed] Ammo Trunks
