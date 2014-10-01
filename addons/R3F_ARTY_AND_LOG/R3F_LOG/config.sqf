@@ -19,7 +19,8 @@ R3F_LOG_CFG_objets_remorquables =
 	"Ship_F",
 	"Tank_F",
 	"Plane",
-	"Helicopter_Base_F"
+	"Helicopter_Base_F",
+	"Land_Pier_F"
 ];
 
 /****** LIFT WITH VEHICLE  ******/
