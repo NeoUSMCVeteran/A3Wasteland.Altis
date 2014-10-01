@@ -517,18 +517,18 @@ allStoreGear = compileFinal str (call headArray + call uniformArray + call vestA
 genObjectsArray = compileFinal str
 [
 	["Empty Ammo Crate", "Box_NATO_Ammo_F", 100, "ammocrate"],
-	["Metal Barrel", "Land_MetalBarrel_F", 25, "object"],
-	["Toilet Box", "Land_ToiletBox_F", 25, "object"],
+	//["Metal Barrel", "Land_MetalBarrel_F", 25, "object"], 
+	//["Toilet Box", "Land_ToiletBox_F", 25, "object"],     
 	["Lamp Post (Harbour)", "Land_LampHarbour_F", 25, "object"],
 	["Lamp Post (Shabby)", "Land_LampShabby_F", 25, "object"],
 	["Barrier Gate", "Land_BarGate_F", 50, "object"],
-	["Pipes", "Land_Pipes_Large_F", 100, "object"],
-	["Concrete Frame", "Land_CncShelter_F", 100, "object"],
-	["Safety Barrier", "Land_Crash_barrier_F", 100, "object"],
+	//["Pipes", "Land_Pipes_Large_F", 100, "object"],  
+	//["Concrete Frame", "Land_CncShelter_F", 100, "object"],
+	//["Safety Barrier", "Land_Crash_barrier_F", 100, "object"],  
 	["Concrete Barrier", "Land_CncBarrier_F", 200, "object"],
 	["Concrete Barrier (Medium)", "Land_CncBarrierMedium_F", 175, "object"],
 	["Concrete Barrier (Long)", "Land_CncBarrierMedium4_F", 250, "object"],
-	["HBarrier 1", "Land_HBarrier_1_F", 50, "object"],
+	["HBarrier 1", "Land_HBarrier_1_F", 50, "object"], 
 	["HBarrier 3", "Land_HBarrier_3_F", 100, "object"],
 	["HBarrier 5", "Land_HBarrier_5_F", 175, "object"],
 	["HBarrier Big", "Land_HBarrierBig_F", 250, "object"],
@@ -538,10 +538,10 @@ genObjectsArray = compileFinal str
 	["Concrete Wall", "Land_CncWall1_F", 200, "object"],
 	["Concrete Military Wall", "Land_Mil_ConcreteWall_F", 200, "object"],
 	["Concrete Wall (Long)", "Land_CncWall4_F", 300, "object"],
-	["Military Wall (Big)", "Land_Mil_WallBig_4m_F", 300, "object"],
+	//["Military Wall (Big)", "Land_Mil_WallBig_4m_F", 300, "object"],
 	["Shoot House Wall", "Land_Shoot_House_Wall_F", 180, "object"],
 	["Canal Wall (Small)", "Land_Canal_WallSmall_10m_F", 200, "object"],
-	["Canal Stairs", "Land_Canal_Wall_Stairs_F", 250, "object"],
+	//["Canal Stairs", "Land_Canal_Wall_Stairs_F", 250, "object"],
 	["Bag Fence (Corner)", "Land_BagFence_Corner_F", 75, "object"],
 	["Bag Fence (End)", "Land_BagFence_End_F", 75, "object"],
 	["Bag Fence (Long)", "Land_BagFence_Long_F", 100, "object"],
@@ -554,7 +554,7 @@ genObjectsArray = compileFinal str
 	["Military Cargo Tower", "Land_Cargo_Tower_V1_F", 2500, "object"],
 	["Concrete Ramp", "Land_RampConcrete_F", 200, "object"],
 	["Concrete Ramp (High)", "Land_RampConcreteHigh_F", 250, "object"],
-	["Scaffolding", "Land_Scaffolding_F", 200, "object"]
+	//["Scaffolding", "Land_Scaffolding_F", 200, "object"]
 ];
 
 allGenStoreVanillaItems = compileFinal str (call genItemArray + call genObjectsArray + call allStoreGear);
